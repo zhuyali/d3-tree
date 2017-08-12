@@ -1,0 +1,33 @@
+{
+  "name": "d3-tree",
+  "version": "0.1.0",
+  "description": "tree view by d3",
+  "keywords": [
+    "d3",
+    "tree"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/d3-tree.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "co-mocha": "*",
+    "mocha": "*",
+    "should": "*",
+    "jshint": "*",
+    "istanbul": "*",
+    "pre-commit": "*"
+  },
+  "scripts": {
+    "test": "make test",
+    "jshint": "make jshint"
+  },
+  "pre-commit": [
+    "jshint"
+  ],
+  "homepage": "https://github.com/xudafeng/d3-tree",
+  "license": "MIT"
+}
