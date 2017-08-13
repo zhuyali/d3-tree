@@ -1,6 +1,6 @@
 'use strict';
 
-var d3-tree = require('..');
+var D3Tree = require('..');
 
 describe('test', function() {
 
