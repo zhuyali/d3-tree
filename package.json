@@ -11,17 +11,20 @@
     "type": "git",
     "url": "git://github.com/xudafeng/d3-tree.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "co-mocha": "*",
-    "mocha": "*",
-    "should": "*",
-    "jshint": "*",
+    "d3": "^3.5.17",
     "istanbul": "*",
-    "pre-commit": "*"
+    "jshint": "*",
+    "mocha": "*",
+    "pre-commit": "*",
+    "should": "*",
+    "webpack": "^3.5.3",
+    "webpack-dev-server": "^2.7.1"
   },
   "scripts": {
+    "server": "webpack-dev-server",
     "test": "make test",
     "jshint": "make jshint"
   },
