@@ -10,3 +10,4 @@ Makefile
 coverage/
 *.sw*
 *.un~
+assets/
