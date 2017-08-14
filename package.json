@@ -1,6 +1,6 @@
 {
   "name": "d3-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tree view by d3",
   "keywords": [
     "d3",
@@ -11,13 +11,14 @@
     "type": "git",
     "url": "git://github.com/xudafeng/d3-tree.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "d3": "^4.10.0"
+  },
   "devDependencies": {
     "babel": "~5.8.23",
     "babel-core": "^5.x",
     "babel-loader": "^5.x",
     "co-mocha": "*",
-    "d3": "^4.10.0",
     "istanbul": "*",
     "jshint": "*",
     "mocha": "*",
