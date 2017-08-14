@@ -1,18 +1,21 @@
 {
   "name": "d3-tree",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "tree view by d3",
   "keywords": [
     "d3",
     "tree"
   ],
-  "main": "index.js",
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/d3-tree.git"
   },
   "dependencies": {},
   "devDependencies": {
+    "babel": "~5.8.23",
+    "babel-core": "^5.x",
+    "babel-loader": "^5.x",
     "co-mocha": "*",
     "d3": "^3.5.17",
     "istanbul": "*",
