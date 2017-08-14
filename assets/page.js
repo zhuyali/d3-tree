@@ -50,6 +50,7 @@ let data = {
 var d3tree = window.d3tree = new D3Tree({
   selector: '#container',
   data: data,
+  width: window.innerWidth,
   height: 800,
   imageWidth: 100,
   imageHeight: 100
