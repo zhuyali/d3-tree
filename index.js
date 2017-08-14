@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/d3-tree');
+module.exports = require('./lib/d3-tree');

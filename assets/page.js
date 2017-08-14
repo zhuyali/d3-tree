@@ -14,7 +14,7 @@ let data = {
   id: guid(),
   data: {
     image: null,
-    text: 'global'
+    text: ''
   },
   children: [{
     id: guid(),
@@ -51,15 +51,16 @@ var d3tree = window.d3tree = new D3Tree({
   selector: '#container',
   data: data,
   width: window.innerWidth,
-  height: 800,
+  height: window.innerHeight,
   imageWidth: 100,
-  imageHeight: 100
+  imageHeight: 100,
+  direction: 'd'
 });
 
 d3tree.init();
 
 document.querySelector('#append').addEventListener('click', () => {
-  data.children.push({
+  data.children[0].children.push({
     id: guid(),
     data: {
       image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
