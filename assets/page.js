@@ -53,7 +53,8 @@ var d3tree = window.d3tree = new D3Tree({
   width: window.innerWidth,
   height: window.innerHeight,
   imageWidth: 100,
-  imageHeight: 100
+  imageHeight: 100,
+  direction: 'd'
 });
 
 d3tree.init();
