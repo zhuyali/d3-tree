@@ -1,12 +1,12 @@
 {
   "name": "d3-tree",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "tree view based on d3",
   "keywords": [
     "d3",
     "tree"
   ],
-  "main": "./dist/d3-tree",
+  "main": "./lib/d3-tree",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/d3-tree.git"
