@@ -17,7 +17,7 @@
 [download-image]: https://img.shields.io/npm/dm/d3-tree.svg?style=flat-square
 [download-url]: https://npmjs.org/package/d3-tree
 
-> tree view by d3
+> tree view based on d3
 
 ## Installment
 
