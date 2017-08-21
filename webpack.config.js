@@ -6,8 +6,8 @@ module.exports = {
     'd3-tree': path.resolve(__dirname, './lib/d3-tree')
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist',
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/build',
     filename: '[name].js'
   },
   externals: [
@@ -26,8 +26,15 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.js$/,
-        loader: 'babel-loader'
+        test: /\.js[x]?$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2015', 'latest'],
+            plugins: []
+          }
+        }
       }
     ]
   }

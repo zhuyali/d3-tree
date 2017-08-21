@@ -1,6 +1,6 @@
 'use strict';
 
-const D3Tree = require('../lib/d3-tree');
+const D3Tree = require('../dist/d3-tree');
 
 var guid = function() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
