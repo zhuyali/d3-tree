@@ -32,7 +32,15 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['es2015', 'latest'],
-            plugins: []
+            plugins: [
+              [
+                'import',
+                {
+                  libraryName: 'd3',
+                  style: 'javascript'
+                }
+              ]
+            ]
           }
         }
       }
