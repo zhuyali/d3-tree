@@ -7,5 +7,6 @@ coverage/
 .project
 build/
 dist/
+package-lock.json
 *.sw*
 *.un~
