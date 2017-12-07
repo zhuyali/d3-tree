@@ -14,10 +14,6 @@ body, html {
   stroke: #eee;
 }
 
-.d3-tree-image {
-  width: 100px;
-}
-
 #container svg {
   background: #fff;
 }
