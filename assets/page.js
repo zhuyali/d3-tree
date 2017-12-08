@@ -4,30 +4,30 @@ const D3Tree = require('../dist/d3-tree');
 
 let data = {
   data: {
-    image: 'https://www.baidu.com/img/bd_logo1.png',
+    image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
     text: 'test1',
   },
   children: [{
     data: {
-      image: 'https://www.baidu.com/img/bd_logo1.png',
+      image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
       text: 'test11',
     },
     children: [{
       data: {
-        image: 'https://www.baidu.com/img/bd_logo1.png',
+        image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
         text: 'test111',
       },
       children: []
     }]
   }, {
     data: {
-      image: 'https://www.baidu.com/img/bd_logo1.png',
+      image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
       text: 'test12',
     },
     children: []
   }, {
     data: {
-      image: 'https://www.baidu.com/img/bd_logo1.png',
+      image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
       text: 'test13',
     },
     children: []
@@ -48,7 +48,7 @@ d3tree.init();
 
 document.querySelector('#append').addEventListener('click', () => {
   data.children[0].children.push({
-    image: 'https://www.baidu.com/img/bd_logo1.png',
+    image: 'https://avatars1.githubusercontent.com/u/9263023?v=4&s=460',
     text: 'new',
     children: []
   });
