@@ -2,10 +2,10 @@
 
 const D3Tree = require('../dist/d3-tree');
 
-const testImg = 'https://www.baidu.com/img/bd_logo1.png';
+const testImg = 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4';
 let data = {
   data: {
-    image: '',
+    image: testImg,
     text: 'test1',
   },
   children: [{
@@ -40,16 +40,21 @@ var d3tree = window.d3tree = new D3Tree({
   data: data,
   width: window.innerWidth,
   height: window.innerHeight,
-  imageMaxHeight: 170,
   duration: 1000,
-  marginRight: 300
+  marginRight: 300,
+  itemConfigHandle: img => {
+    return {
+      imageMaxHeight: 170,
+      isVertical: false
+    };
+  }
 });
 
 d3tree.init();
 
 document.querySelector('#append').addEventListener('click', () => {
   data.children[0].children.push({
-    image: 'https://www.baidu.com/img/bd_logo1.png',
+    image: testImg,
     text: 'new',
     children: []
   });
