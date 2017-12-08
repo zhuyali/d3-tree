@@ -2,32 +2,33 @@
 
 const D3Tree = require('../dist/d3-tree');
 
+const testImg = 'https://www.baidu.com/img/bd_logo1.png';
 let data = {
   data: {
-    image: 'https://www.baidu.com/img/bd_logo1.png',
+    image: '',
     text: 'test1',
   },
   children: [{
     data: {
-      image: 'https://www.baidu.com/img/bd_logo1.png',
+      image: testImg,
       text: 'test11',
     },
     children: [{
       data: {
-        image: 'https://www.baidu.com/img/bd_logo1.png',
+        image: testImg,
         text: 'test111',
       },
       children: []
     }]
   }, {
     data: {
-      image: 'https://www.baidu.com/img/bd_logo1.png',
+      image: testImg,
       text: 'test12',
     },
     children: []
   }, {
     data: {
-      image: 'https://www.baidu.com/img/bd_logo1.png',
+      image: testImg,
       text: 'test13',
     },
     children: []
@@ -41,8 +42,7 @@ var d3tree = window.d3tree = new D3Tree({
   height: window.innerHeight,
   imageMaxHeight: 170,
   duration: 1000,
-  marginRight: 300,
-  isMobile: false
+  marginRight: 300
 });
 
 d3tree.init();
