@@ -41,7 +41,8 @@ var d3tree = window.d3tree = new D3Tree({
   height: window.innerHeight,
   imageMaxHeight: 170,
   duration: 1000,
-  marginRight: 300
+  marginRight: 300,
+  isMobile: false
 });
 
 d3tree.init();
