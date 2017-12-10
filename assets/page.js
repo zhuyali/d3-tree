@@ -11,7 +11,7 @@ let data = {
   children: [{
     data: {
       image: testImg,
-      text: 'test11',
+      text: null,
     },
     children: [{
       data: {
@@ -22,7 +22,7 @@ let data = {
     }]
   }, {
     data: {
-      image: testImg,
+      image: null,
       text: 'test12',
     },
     children: []
@@ -53,6 +53,11 @@ var d3tree = window.d3tree = new D3Tree({
 d3tree.init();
 
 document.querySelector('#append').addEventListener('click', () => {
+  data.children.push({
+    image: testImg,
+    text: 'new',
+    children: []
+  });
   data.children[0].children.push({
     image: testImg,
     text: 'new',
