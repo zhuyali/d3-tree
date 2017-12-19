@@ -1,6 +1,6 @@
 'use strict';
 
-const D3Tree = require('../dist/d3-tree');
+const D3Tree = require('../lib/d3-tree');
 
 const testImg = 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4';
 let data = {
@@ -40,14 +40,7 @@ var d3tree = window.d3tree = new D3Tree({
   data: data,
   width: window.innerWidth,
   height: window.innerHeight,
-  duration: 1000,
-  marginRight: 300,
-  itemConfigHandle: img => {
-    return {
-      imageMaxHeight: 170,
-      isVertical: false
-    };
-  }
+  duration: 1000
 });
 
 d3tree.init();
