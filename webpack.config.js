@@ -31,7 +31,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'latest'],
+            presets: ['env', 'es2015', 'latest'],
             plugins: [
               [
                 'import',
