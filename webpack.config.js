@@ -13,8 +13,8 @@ class WebpackAfterAllPlugin {
 
 module.exports = {
   entry: {
-    page: path.resolve(__dirname, './assets/page'),
-    'd3-tree': path.resolve(__dirname, './lib/d3-tree')
+    page: path.resolve(__dirname, 'assets', 'page'),
+    'd3-tree': path.resolve(__dirname, 'lib', 'd3-tree')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
