@@ -2,4 +2,3 @@
 --require babel-register
 --recursive
 --timeout 30000
-
