@@ -1,0 +1,4 @@
+{
+  "presets": ["env", "latest", "stage-2"],
+  "comments": false
+}
