@@ -24,6 +24,13 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        }
+      },
+      {
         test: /\.js?$/,
         exclude: /node_modules/,
         loader: 'istanbul-instrumenter-loader',
