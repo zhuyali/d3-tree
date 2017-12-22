@@ -15,33 +15,38 @@
     "d3": "^4.12.0"
   },
   "devDependencies": {
-    "babel": "~5.8.23",
     "babel-core": "^6.17.0",
-    "babel-loader": "^7.1.0",
+    "babel-loader": "^7.1.2",
     "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1",
     "babel-preset-latest": "^6.24.1",
-    "co-mocha": "*",
+    "babel-preset-stage-2": "^6.22.0",
     "eslint": "^4.12.1",
     "eslint-plugin-mocha": "^4.11.0",
-    "istanbul": "*",
-    "mocha": "*",
+    "istanbul-instrumenter-loader": "^3.0.0",
+    "macaca-cli": "^2.0.12",
+    "macaca-coverage": "^1.0.0",
+    "macaca-electron": "^1.1.17",
+    "macaca-reporter": "^1.0.36",
+    "macaca-wd": "^1.0.18",
     "pre-commit": "*",
-    "should": "*",
-    "webpack": "^3.5.3",
-    "webpack-dev-server": "^2.7.1"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
-    "dev": "webpack-dev-server --watch",
-    "test": "mocha",
-    "lint": "eslint .",
+    "dev": "webpack-dev-server",
+    "lint": "eslint --fix lib assets test",
+    "serve": "npm run dev &",
+    "test": "macaca run -d ./test --reporter macaca-reporter",
     "prepublish": "npm run build",
-    "build": "babel lib/ --out-dir dist/ -D && webpack -p"
+    "build": "webpack -p",
+    "ci": "npm run lint && npm run serve && npm run test"
   },
   "pre-commit": [
     "lint"
   ],
-  "homepage": "https://github.com/xudafeng/d3-tree",
   "license": "MIT"
 }

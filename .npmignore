@@ -1,11 +1,11 @@
-coverage.html
-lib-cov/
 node_modules
 .travis.yml
-.jshintrc
-.jshintignore
+.eslintrc
+.eslintignore
 coverage/
-package-lock.json
+screenshots/
+reports/
+assets/
+.ready
 *.sw*
 *.un~
-assets/

@@ -3,8 +3,11 @@ node_modules
 npm-debug.log
 .idea/*
 Thumbs.db
-coverage/
 .project
+.ready
+coverage/
+screenshots/
+reports/
 build/
 dist/
 *.sw*
