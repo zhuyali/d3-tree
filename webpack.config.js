@@ -31,15 +31,6 @@ module.exports = {
         }
       },
       {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'istanbul-instrumenter-loader',
-        query: {
-          esModules: true,
-          coverageVariable: '__macaca_coverage__'
-        }
-      },
-      {
         test: /\.json$/,
         loader: 'json',
         exclude: /node_modules/
