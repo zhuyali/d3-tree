@@ -36,7 +36,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "lint": "eslint --fix lib assets test",
-    "dev:test": "NODE_ENV=test webpack-dev-server",
+    "dev:test": "cross-env NODE_ENV=test webpack-dev-server",
     "serve": "npm run dev:test &",
     "test": "macaca run -d ./test --reporter macaca-reporter",
     "prepublish": "npm run build",
