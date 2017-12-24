@@ -32,7 +32,7 @@ describe('test/d3-tree.test.js', () => {
 
     it('page render should be ok', () => {
       return driver
-        .get(BASE_URL)
+        .getUrl(BASE_URL)
         .sleep(1000)
         .elementById('append')
         .click()
