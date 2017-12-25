@@ -9,7 +9,7 @@
   "main": "./dist/d3-tree",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/d3-tree.git"
+    "url": "git://github.com/zhuyali/d3-tree.git"
   },
   "dependencies": {
     "d3": "^4.12.0"
