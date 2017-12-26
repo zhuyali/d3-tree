@@ -22,5 +22,10 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
+  resolve: {
+    alias: {
+      'd3': 'd3/build/d3.js'
+    }
+  },
 };
