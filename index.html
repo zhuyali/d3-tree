@@ -17,7 +17,7 @@
       var isOnline = !!~location.host.indexOf('github');
       var script = document.createElement('script');
       script.type = 'text/javascript';
-      script.src = (isOnline ? '//unpkg.com/d3-tree@latest' : '.') + '/dist/d3-tree.js';
+      script.src = (isOnline ? '//unpkg.com/d3-tree@latest' : '.') + '/build/page.js';
       var head = document.getElementsByTagName('head')[0];
       head.appendChild(script);
     </script>
