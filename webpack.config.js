@@ -3,11 +3,10 @@ const path = require('path');
 module.exports = {
   entry: {
     page: path.resolve(__dirname, 'assets', 'page'),
-    'd3-tree': path.resolve(__dirname, 'lib', 'd3-tree')
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist',
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/build',
     filename: '[name].js'
   },
   module: {

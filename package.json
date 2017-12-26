@@ -15,6 +15,7 @@
     "d3": "^4.12.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^7.1.0",
     "babel-plugin-istanbul": "^4.1.5",
@@ -40,7 +41,8 @@
     "serve": "npm run dev:test &",
     "test": "macaca run -d ./test --reporter macaca-reporter",
     "prepublish": "npm run build",
-    "build": "cross-env NODE_ENV=production webpack -p --progress --hide-modules",
+    "compile": "babel lib/ --out-dir dist/ -D",
+    "build": "cross-env NODE_ENV=production webpack -p --progress --hide-modules && npm run compile",
     "ci": "npm run lint && npm run serve && npm run test"
   },
   "pre-commit": [
