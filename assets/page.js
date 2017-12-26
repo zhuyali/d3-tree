@@ -19,6 +19,12 @@ let data = {
         text: 'test111',
       },
       children: []
+    }, {
+      data: {
+        image: testImg,
+        text: 'test112',
+      },
+      children: []
     }]
   }, {
     data: {
