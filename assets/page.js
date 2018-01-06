@@ -16,7 +16,7 @@ let data = {
     children: [{
       data: {
         image: testImg,
-        text: 'multi\nline中文\nline中文',
+        text: 'multi\nline中文\nline中文line中文line中文\nmulti\nline中文\nline中文',
       },
       children: []
     }, {
