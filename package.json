@@ -42,7 +42,7 @@
     "dev:test": "cross-env NODE_ENV=test webpack-dev-server",
     "serve": "npm run dev:test &",
     "contributor": "git-contributor",
-    "test": "macaca run -d ./test --reporter macaca-reporter",
+    "test": "macaca run -d ./test",
     "prepublish": "npm run build",
     "compile": "babel lib/ --out-dir dist/ -D",
     "build": "cross-env NODE_ENV=production webpack -p --progress --hide-modules && npm run compile",
