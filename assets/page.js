@@ -2,11 +2,16 @@
 
 const D3Tree = require('../lib/d3-tree');
 
-const testImg = 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4';
+const testImg = "https://avatars2.githubusercontent.com/u/9263023?s=200&v=4";
+const testImg2 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
+const testImg3 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
+const testImg4 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
+const testImg5 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
+
 let data = {
   data: {
-    image: testImg,
-    text: 'test1',
+    image: testImg5,
+    text: 'five images',
   },
   children: [{
     data: {
@@ -15,14 +20,14 @@ let data = {
     },
     children: [{
       data: {
-        image: testImg,
+        image: testImg4,
         text: 'multi\nline中文\n中文中文中文中文\nmulti\nline中文\nline中文',
       },
       children: []
     }, {
       data: {
-        image: testImg,
-        text: 'test112',
+        image: testImg2,
+        text: 'two images',
       },
       children: []
     }]
@@ -34,8 +39,8 @@ let data = {
     children: []
   }, {
     data: {
-      image: testImg,
-      text: 'test13',
+      image: testImg3,
+      text: 'three images',
     },
     children: []
   }]
@@ -51,16 +56,3 @@ var d3tree = window.d3tree = new D3Tree({
 
 d3tree.init();
 
-document.querySelector('#append').addEventListener('click', () => {
-  data.children.push({
-    image: testImg,
-    text: 'new',
-    children: []
-  });
-  data.children[0].children.push({
-    image: testImg,
-    text: 'new',
-    children: []
-  });
-  d3tree.update(data);
-}, false);

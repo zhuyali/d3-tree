@@ -34,15 +34,6 @@ describe('test/d3-tree.test.js', () => {
       return driver
         .getUrl(BASE_URL)
         .sleep(1000)
-        .elementById('append')
-        .click()
-        .sleep(500)
-        .click()
-        .sleep(500)
-        .click()
-        .sleep(500)
-        .click()
-        .sleep(500);
     });
   });
 });
