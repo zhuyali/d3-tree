@@ -56,3 +56,16 @@ var d3tree = window.d3tree = new D3Tree({
 
 d3tree.init();
 
+document.querySelector('#append').addEventListener('click', () => {
+  data.children.push({
+    image: testImg,
+    text: 'new',
+    children: []
+  });
+  data.children[0].children.push({
+    image: testImg,
+    text: 'new',
+    children: []
+  });
+  d3tree.update(data);
+}, false);
