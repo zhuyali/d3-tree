@@ -31,7 +31,7 @@
     "macaca-coverage": "^1.0.0",
     "macaca-electron": "^1.1.17",
     "macaca-reporter": "^1.0.36",
-    "macaca-wd": "^1.0.18",
+    "macaca-wd": "3",
     "pre-commit": "*",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
