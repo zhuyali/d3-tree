@@ -3,11 +3,28 @@
 const D3Tree = require('../lib/d3-tree');
 
 const testImg = "https://avatars2.githubusercontent.com/u/9263023?s=200&v=4";
-const testImg2 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
-const testImg3 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
-const testImg4 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
-const testImg5 = "['https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4','https://avatars2.githubusercontent.com/u/9263023?s=200&v=4', 'https://avatars2.githubusercontent.com/u/9263023?s=200&v=4']"
-
+const testImg2 = `[
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+]`
+const testImg3 = `[
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+]`
+const testImg4 = `[
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+]`
+const testImg5 = `[
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+https://avatars2.githubusercontent.com/u/9263023?s=200&v=4
+]`
 let data = {
   data: {
     image: testImg5,
